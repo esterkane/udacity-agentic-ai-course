@@ -2,30 +2,46 @@
 
 ## Purpose
 
-This project is expected to demonstrate an agentic workflow for project management tasks. Based on the available ZIP inventory, it appears to include Phase 1 agents, Phase 2 orchestration, and generated outputs. TODO: Confirm exact behavior after reviewing the project files.
+This project demonstrates an agentic workflow for turning an Email Router product spec into project-planning artifacts.
 
-## Expected Artifacts
+Phase 1 builds reusable agent classes:
 
-- `phase_1/`: individual agents and supporting workflow code after sanitization.
-- `phase_2/`: end-to-end workflow orchestration after sanitization.
-- `outputs/`: selected generated outputs and static check output if safe to commit.
+- `DirectPromptAgent`
+- `AugmentedPromptAgent`
+- `KnowledgeAugmentedPromptAgent`
+- `RAGKnowledgePromptAgent`
+- `EvaluationAgent`
+- `RoutingAgent`
+- `ActionPlanningAgent`
+
+Phase 2 uses the workflow agents to generate user stories, product features, and engineering tasks. The implementation uses an action planner to define workflow steps, a routing agent to select the correct role agent, knowledge-augmented agents to generate artifacts, and evaluation agents to check output structure.
+
+## Main Artifacts
+
+- `phase_1/`: intended location for reusable agent classes and Phase 1 smoke-test scripts.
+- `phase_2/`: intended location for the Email Router workflow implementation.
+- `outputs/`: intended location for output evidence from real script runs.
 - `docs/`: architecture, lessons learned, do/don't, troubleshooting, and quiz.
 
-## Setup
+## How To Run
 
-TODO: Add setup commands after dependencies are confirmed from the project files.
+Run instructions should be added after the source package is committed into this project folder. The local project used Python, environment variables for API access, and a requirements file.
 
-## Run Instructions
+High-level flow:
 
-TODO: Add exact commands only after running them and preserving output evidence.
+1. Create a Python virtual environment.
+2. Install project dependencies.
+3. Set API credentials locally.
+4. Run Phase 1 scripts to check individual agents.
+5. Run the Phase 2 workflow script.
+6. Save generated output only when it comes from an actual run.
 
 ## Evidence
 
-No new test evidence has been generated in this repository. Existing output files from the submitted project should be reviewed before copying.
+No run evidence is committed in this repository for Project 2 yet. Do not claim the workflow ran from this repository until source files and output artifacts are committed.
 
 ## Security Notes
 
 - Do not commit `.env` files.
 - Review `.env.example` files before committing, even if values look like placeholders.
 - Check generated outputs for private prompts, local paths, or sensitive data.
-

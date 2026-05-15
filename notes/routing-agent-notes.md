@@ -10,8 +10,10 @@ A routing agent chooses which path should handle a request. It is useful when th
 - Include a fallback route.
 - Record the selected route and reason.
 - Keep route labels stable so downstream code can rely on them.
+- Log similarity score, keyword boost, and final score when using embedding routing.
+- Test short prompts separately.
 
-## TODO
+## Project Examples
 
-- Add the route labels and decision examples from Project 02.
-
+- Project 2 routes workflow steps to Product Manager, Program Manager, or Development Engineer support functions.
+- The router uses embedding similarity plus capped keyword boosts for route terms such as `user story`, `feature`, and `engineering`.

@@ -14,8 +14,10 @@ ReAct-style workflows alternate between reasoning about the next step and taking
 
 - Let the model invent tool results.
 - Continue after a failed action without recording the failure.
+- Let the agent finalize before required evals pass.
 
-## TODO
+## Project Example
 
-- Identify whether Project 01 uses a ReAct-style pattern and document the exact cells or files.
-
+- Project 1 uses a Resourceful Itinerary Revision Agent with a THOUGHT -> ACTION -> OBSERVATION loop.
+- Python parses the `ACTION` JSON, executes tools, and returns `OBSERVATION`.
+- The revision agent should run evals before calling `final_answer_tool`.

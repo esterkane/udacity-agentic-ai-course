@@ -8,10 +8,10 @@ This course work focuses on practical agentic AI workflows: decomposing tasks, r
 
 | Project | Main Pattern | Current Evidence |
 | --- | --- | --- |
-| 01 Agentsville Trip Planner | TODO: identify from notebook | TODO: inspect `project_final.zip` |
-| 02 Agentic Workflow Project Management | Multi-agent workflow with routing and evaluation | TODO: inspect `agentic-ai-workflows-final.zip` and document exact files |
-| 03 TBD | TODO | TODO |
-| 04 TBD | TODO | TODO |
+| 01 AgentsVille Trip Planner | Pydantic-validated itinerary generation plus ReAct revision loop | Documentation is present. Source notebook and run outputs are not committed in this repo yet. |
+| 02 Agentic Workflow Project Management | Agent classes, evaluation loops, embedding routing, action planning, and workflow orchestration | Documentation is present. Source package and run outputs are not committed in this repo yet. |
+| 03 Reserved | Not started in this repo | No files yet. |
+| 04 Reserved | Not started in this repo | No files yet. |
 
 ## Working Standards
 
@@ -20,8 +20,8 @@ This course work focuses on practical agentic AI workflows: decomposing tasks, r
 - Preserve enough output evidence to explain what happened, but do not preserve sensitive data.
 - Record failure modes and fixes in troubleshooting notes.
 
-## TODO
+## Current Gaps
 
-- Add a one-paragraph summary for each project after reviewing the actual project files.
-- Add a dependency matrix once each project has confirmed requirements.
-
+- Add sanitized source artifacts for Project 1 and Project 2.
+- Add run logs only after rerunning notebooks or scripts from committed source files.
+- Add dependency details beside each project when source files are committed.

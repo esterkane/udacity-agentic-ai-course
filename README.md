@@ -1,6 +1,6 @@
 # Udacity Agentic AI Course
 
-This repository documents my Udacity Agentic AI course work. It is organized as a practical learning archive: one folder per project, shared course notes, troubleshooting notes, do/don't guidance, and quiz questions for review.
+This repository documents my Udacity Agentic AI course work. It is organized as one folder per project plus shared notes, troubleshooting pages, checklists, and quiz questions.
 
 The goal is not to present these projects as production systems. The goal is to preserve the implementation patterns, design decisions, limitations, and evidence needed to explain the work clearly.
 
@@ -10,8 +10,8 @@ The goal is not to present these projects as production systems. The goal is to 
 | --- | --- | --- | --- | --- |
 | 01 | AgentsVille Trip Planner | Jupyter Notebook | Multi-stage travel assistant with validation, prompt chaining, evaluation, and ReAct-style revision | `projects/01-agentsville-trip-planner/` |
 | 02 | AI-Powered Agentic Workflow for Project Management | Python package/workflow | Reusable agents, routing, evaluation, action planning, and project-plan generation | `projects/02-agentic-workflow-project-management/` |
-| 03 | TBD | TBD | To be added later | TODO |
-| 04 | TBD | TBD | To be added later | TODO |
+| 03 | Reserved | TBD | Will be added when the course project is complete | Not created yet |
+| 04 | Reserved | TBD | Will be added when the course project is complete | Not created yet |
 
 ## Repository Organization
 
@@ -21,7 +21,7 @@ notes/      Topic notes for prompt engineering, ReAct, evaluation, and routing
 projects/   One folder per Udacity project
 ```
 
-Each project folder is expected to contain:
+Each project folder should contain:
 
 - A project README with purpose, setup notes, and evidence status.
 - `docs/architecture.md` for workflow structure and agent responsibilities.
@@ -71,7 +71,7 @@ The important engineering focus is decomposition: each agent has a narrower resp
 
 ## How To Run Locally
 
-These are high-level steps. Project-specific commands should be added only after the project files are reviewed and the commands are confirmed.
+These are high-level steps. Use project-specific commands only when source files or notebooks are present in that project folder.
 
 1. Clone the repository.
 2. Create a Python virtual environment.
@@ -90,10 +90,11 @@ These are high-level steps. Project-specific commands should be added only after
 
 ## Evidence Policy
 
-When evidence is missing, the docs should say so directly. Use `TODO: add test evidence` or equivalent wording instead of implying a successful run.
+When evidence is missing, the docs should say so directly. Do not imply a notebook, script, or test ran unless the repository includes the relevant output artifact or command log.
 
-## TODO
+## Current Gaps
 
-- Review the provided project ZIP files and copy sanitized source artifacts into the project folders.
-- Add project-specific run commands after confirming dependencies.
-- Add evidence artifacts from real runs only.
+- Source notebooks and Python files are not copied into the project folders yet.
+- Project folders currently focus on documentation and review notes.
+- Run commands should be added beside source files after those files are sanitized and committed.
+- Evidence artifacts should be added only from real runs.
