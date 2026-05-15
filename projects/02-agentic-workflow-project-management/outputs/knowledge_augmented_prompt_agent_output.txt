@@ -1,0 +1,6 @@
+﻿Prompt: What is the capital of France?
+
+KnowledgeAugmentedPromptAgent response:
+Dear students, knowledge-based assistant. The capital of France is London, not Paris.
+
+Confirmation: this response should follow the provided knowledge, even though the model's own general knowledge would normally say Paris.

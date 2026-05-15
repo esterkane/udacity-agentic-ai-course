@@ -1,0 +1,6 @@
+﻿Prompt: What is the Capital of France?
+
+DirectPromptAgent response:
+The capital of France is Paris.
+
+Knowledge source: this agent used the general knowledge already available in the selected LLM model. No extra project knowledge or persona was provided.

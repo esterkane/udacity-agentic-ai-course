@@ -67,7 +67,6 @@ The important engineering focus is decomposition: each agent has a narrower resp
 - Prompt chaining needs structured intermediate artifacts; otherwise downstream steps can misread fluent but ambiguous text.
 - Evaluation agents are useful for feedback loops, but they are not a replacement for human review or deterministic validation.
 - Routing logic should be explicit and auditable. If a decision can be made deterministically, code may be safer than an LLM route decision.
-- Outputs should be generated from actual script or notebook runs. They should not be fabricated or rewritten to look successful.
 
 ## How To Run Locally
 
@@ -92,9 +91,10 @@ These are high-level steps. Use project-specific commands only when source files
 
 When evidence is missing, the docs should say so directly. Do not imply a notebook, script, or test ran unless the repository includes the relevant output artifact or command log.
 
-## Current Gaps
+## Current State
 
-- Source notebooks and Python files are not copied into the project folders yet.
-- Project folders currently focus on documentation and review notes.
-- Run commands should be added beside source files after those files are sanitized and committed.
-- Evidence artifacts should be added only from real runs.
+- Project 1 includes a sanitized notebook and support library in `projects/01-agentsville-trip-planner/src-or-notebooks/`.
+- Project 2 includes source files, scripts, requirements, reflection notes, and output evidence in `projects/02-agentic-workflow-project-management/`.
+- I did not rerun the notebook or scripts during the artifact upload.
+- The Project 1 notebook was sanitized to replace a hardcoded API key with `OPENAI_API_KEY`.
+- `.env` and `.env.example` files are not included.

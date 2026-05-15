@@ -8,8 +8,8 @@ This course work focuses on practical agentic AI workflows: decomposing tasks, r
 
 | Project | Main Pattern | Current Evidence |
 | --- | --- | --- |
-| 01 AgentsVille Trip Planner | Pydantic-validated itinerary generation plus ReAct revision loop | Documentation is present. Source notebook and run outputs are not committed in this repo yet. |
-| 02 Agentic Workflow Project Management | Agent classes, evaluation loops, embedding routing, action planning, and workflow orchestration | Documentation is present. Source package and run outputs are not committed in this repo yet. |
+| 01 AgentsVille Trip Planner | Pydantic-validated itinerary generation plus ReAct revision loop | Sanitized notebook and support library are committed. Notebook outputs are from the provided completed notebook; this repo update did not rerun it. |
+| 02 Agentic Workflow Project Management | Agent classes, evaluation loops, embedding routing, action planning, and workflow orchestration | Source files, scripts, requirements, reflection notes, and output evidence are committed. This repo update did not rerun the scripts. |
 | 03 Reserved | Not started in this repo | No files yet. |
 | 04 Reserved | Not started in this repo | No files yet. |
 
@@ -22,6 +22,6 @@ This course work focuses on practical agentic AI workflows: decomposing tasks, r
 
 ## Current Gaps
 
-- Add sanitized source artifacts for Project 1 and Project 2.
-- Add run logs only after rerunning notebooks or scripts from committed source files.
-- Add dependency details beside each project when source files are committed.
+- Add projects 03 and 04 when they are complete.
+- Add fresh run logs if the committed notebook or scripts are rerun after future edits.
+- Keep output evidence separate from source files.

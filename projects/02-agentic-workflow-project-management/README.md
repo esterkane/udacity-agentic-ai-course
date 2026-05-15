@@ -18,14 +18,17 @@ Phase 2 uses the workflow agents to generate user stories, product features, and
 
 ## Main Artifacts
 
-- `phase_1/`: intended location for reusable agent classes and Phase 1 smoke-test scripts.
-- `phase_2/`: intended location for the Email Router workflow implementation.
-- `outputs/`: intended location for output evidence from real script runs.
+- `phase_1/`: reusable agent classes and Phase 1 smoke-test scripts.
+- `phase_2/`: Email Router workflow implementation and product spec.
+- `outputs/`: output evidence copied from the completed project.
+- `requirements.txt`: Python dependencies used by the project.
+- `run_all_tests.ps1` / `run_all_tests.sh`: local scripts for running checks and output generation.
+- `reflection.md`: short project reflection from the completed submission.
 - `docs/`: architecture, lessons learned, do/don't, troubleshooting, and quiz.
 
 ## How To Run
 
-Run instructions should be added after the source package is committed into this project folder. The local project used Python, environment variables for API access, and a requirements file.
+The local project used Python, environment variables for API access, and the dependencies in `requirements.txt`.
 
 High-level flow:
 
@@ -38,7 +41,7 @@ High-level flow:
 
 ## Evidence
 
-No run evidence is committed in this repository for Project 2 yet. Do not claim the workflow ran from this repository until source files and output artifacts are committed.
+Output evidence is committed under `outputs/`. I copied these artifacts from the completed project; I did not rerun the scripts during this repository update.
 
 ## Security Notes
 

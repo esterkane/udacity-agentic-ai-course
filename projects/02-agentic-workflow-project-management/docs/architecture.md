@@ -41,6 +41,13 @@ The design separates planning, routing, generation, and evaluation. This makes i
 - OpenAI-compatible embeddings API for routing and RAG examples.
 - Environment variable for API credentials.
 - Local product spec text file.
+- Python packages listed in `requirements.txt`.
+
+## Evidence Notes
+
+- `outputs/static_check_output.txt` states that a static Python syntax check passed for Phase 1 and Phase 2.
+- Other files in `outputs/` contain copied run output from the completed project.
+- The scripts were not rerun as part of the repository update that added these files.
 
 ## Risks
 

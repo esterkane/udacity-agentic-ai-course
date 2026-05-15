@@ -26,8 +26,9 @@ The notebook flow is:
 
 | Path | Purpose |
 | --- | --- |
-| `src-or-notebooks/` | Intended location for the sanitized project notebook or source exports. |
-| `outputs/` | Intended location for output evidence generated from real notebook runs. |
+| `src-or-notebooks/project_final.ipynb` | Sanitized project notebook. A hardcoded API key was replaced with `os.getenv("OPENAI_API_KEY")`. |
+| `src-or-notebooks/project_lib.py` | Support library used by the notebook for mocked weather/activity data and display helpers. |
+| `outputs/` | Reserved for separate output evidence files if the notebook is rerun later. |
 | `docs/architecture.md` | Detailed flow of models, prompts, tools, evals, and failure handling. |
 | `docs/lessons-learned.md` | Notes from the implementation patterns and tradeoffs. |
 | `docs/dos-and-donts.md` | Practical guidance for prompts, validation, tools, ReAct, evals, and submission hygiene. |
@@ -47,6 +48,8 @@ High-level local flow:
 7. Save output evidence only if it was produced by an actual run and does not contain secrets.
 
 Do not claim the notebook ran successfully unless the output evidence is present and reviewable.
+
+This repository update copied the completed notebook and support file. I did not rerun the notebook during the upload.
 
 ## Expected Final Outcome
 

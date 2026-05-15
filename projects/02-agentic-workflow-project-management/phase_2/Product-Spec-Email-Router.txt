@@ -1,0 +1,34 @@
+# Product Spec: Email Router
+
+## Overview
+InnovateNext Solutions wants an Email Router product that automatically classifies incoming company emails and routes them to the correct team or workflow. The goal is to reduce manual triage, improve response time, and give TPMs and operations teams better visibility into work intake.
+
+## Users
+- Operations Manager: owns the shared inbox and wants faster triage.
+- Support Agent: receives customer issues and needs enough context to respond quickly.
+- Sales Representative: receives qualified sales inquiries without searching through shared inboxes.
+- Technical Program Manager: monitors routing quality, bottlenecks, and unresolved items.
+- System Administrator: configures routing rules, integrations, and access controls.
+
+## Core Capabilities
+1. Ingest emails from a shared inbox.
+2. Classify emails into categories such as Support, Sales, Billing, Partnership, Product Feedback, and Spam/Low Priority.
+3. Route classified emails to the correct destination queue or team.
+4. Extract key fields such as sender, subject, priority, customer/company, and requested action.
+5. Allow administrators to configure categories, routing rules, and confidence thresholds.
+6. Flag low-confidence classifications for human review.
+7. Provide an audit trail showing classification, route decision, timestamp, and reviewer override if applicable.
+8. Provide reporting for volume by category, average routing time, review queue size, and misroute rate.
+
+## Constraints
+- The system must not delete original emails.
+- The system must protect sensitive email content and use role-based access control.
+- Routing decisions should be explainable enough for operational review.
+- The first pilot should support one shared inbox and three destination teams: Support, Sales, and Operations.
+- Human override must be available for low-confidence or incorrect routing decisions.
+
+## Success Metrics
+- Reduce manual triage effort by at least 50%.
+- Route at least 80% of incoming emails without human review after the pilot tuning period.
+- Keep misrouted emails below 5% for high-confidence routes.
+- Provide daily reporting for the TPM and Operations Manager.

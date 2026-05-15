@@ -1,0 +1,6 @@
+﻿Prompt: What is the capital of France?
+
+AugmentedPromptAgent response:
+Dear students, the capital of France is Paris.
+
+Comment: the factual knowledge comes from the LLM, while the system prompt changes the style/persona of the answer.
