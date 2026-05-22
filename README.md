@@ -10,8 +10,8 @@ The goal is not to present these projects as production systems. The goal is to 
 | --- | --- | --- | --- | --- |
 | 01 | AgentsVille Trip Planner | Jupyter Notebook | Multi-stage travel assistant with validation, prompt chaining, evaluation, and ReAct-style revision | `projects/01-agentsville-trip-planner/` |
 | 02 | AI-Powered Agentic Workflow for Project Management | Python package/workflow | Reusable agents, routing, evaluation, action planning, and project-plan generation | `projects/02-agentic-workflow-project-management/` |
-| 03 | Reserved | TBD | Will be added when the course project is complete | Not created yet |
-| 04 | Reserved | TBD | Will be added when the course project is complete | Not created yet |
+| 03 | UdaPlay AI Game Research Agent | Jupyter Notebook/Python helpers | Offline RAG with ChromaDB plus stateful game research agent with web-search fallback | `projects/03-udaplay-solution-project/` |
+| 04 | Beaver's Choice Multi-Agent Quote Workflow | Python script/report | Multi-agent quote, inventory, sales, and advisor workflow with deterministic test evidence | `projects/04-beavers-choice-submission/` |
 
 ## Repository Organization
 
@@ -61,6 +61,18 @@ Phase 2 uses these agents to create an Email Router project plan with user stori
 
 The important engineering focus is decomposition: each agent has a narrower responsibility, and the workflow turns a product request into structured planning artifacts.
 
+## Project 3: UdaPlay AI Game Research Agent
+
+Project 3 contains starter and completed notebooks for a video game research assistant. It builds a local ChromaDB-backed RAG collection from game JSON files, then uses retrieval quality evaluation, web-search fallback, conversation state, and long-term memory to answer game-industry questions.
+
+The important engineering focus is tool selection: the agent should prefer local retrieval when the indexed game data is sufficient, evaluate weak retrieval results, and fall back to web search only when needed.
+
+## Project 4: Beaver's Choice Multi-Agent Quote Workflow
+
+Project 4 contains a multi-agent workflow for quote generation, stock and supplier checks, sales transaction posting, and business-advisor reporting for Beaver's Choice paper products.
+
+The important engineering focus is operational coordination: specialized agents handle inventory, quoting, sales posting, and financial reporting while an orchestrator turns customer requests into auditable fulfillment decisions.
+
 ## What I Learned
 
 - Agentic workflows are easier to debug when each agent has a clear responsibility, input, and output.
@@ -95,6 +107,8 @@ When evidence is missing, the docs should say so directly. Do not imply a notebo
 
 - Project 1 includes a sanitized notebook and support library in `projects/01-agentsville-trip-planner/src-or-notebooks/`.
 - Project 2 includes source files, scripts, requirements, reflection notes, and output evidence in `projects/02-agentic-workflow-project-management/`.
+- Project 3 includes starter notebooks, completed solution notebooks, helper libraries, game JSON data, and a submitted ChromaDB data folder in `projects/03-udaplay-solution-project/`.
+- Project 4 includes the submitted multi-agent Python workflow, report, workflow diagram, and test result evidence in `projects/04-beavers-choice-submission/`.
 - I did not rerun the notebook or scripts during the artifact upload.
 - The Project 1 notebook was sanitized to replace a hardcoded API key with `OPENAI_API_KEY`.
 - `.env` and `.env.example` files are not included.
